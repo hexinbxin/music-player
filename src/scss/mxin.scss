@@ -1,0 +1,10 @@
+@mixin width ($proportion) {
+    width: $proportion/10 * 100%;
+}
+.clr-float{
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}

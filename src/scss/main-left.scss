@@ -1,0 +1,67 @@
+main{
+    .left{
+        @include width(6);
+        position: relative;
+        display: flex;
+        height: 550px;
+        justify-content: center;
+        float: left;
+        .list{
+            display: inline-block;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            cursor: pointer;
+            color: rgb(203, 203, 207);
+        }
+        .showList{
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            max-width: 250px;
+            font-size: 12px;
+            color: rgb(203, 203, 207);
+            text-align: center;
+            border: 1px solid rgb(160, 157, 157);
+            overflow: hidden;
+            line-height: 20px;
+            z-index: 10;
+            border-radius: 5px;
+            display: none;
+            
+            li{
+                cursor: pointer;
+                &.active{
+                    color: rgb(126, 101, 238);
+                }
+            }
+        }
+        .main{
+            flex: 0.5;
+            position: relative;
+            img{
+                display: inline-block;
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                border-radius: 50%;
+                animation: rotate 7s linear infinite;
+                transform-origin: top center;
+                @keyframes rotate {
+                    0%{
+                        transform: rotate(0deg) translateY(-50%) ;
+                    }
+                    50%{
+                        transform: rotate(180deg) translateY(-50%);
+                    }
+                    100%{
+                        transform: rotate(360deg) translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
