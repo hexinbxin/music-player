@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-import {showList, wrap, mainImg, info, singer, next, play, prov, message, audio} from "./var";
-import {lyrics} from "./lyrics";
-import {show} from "./list";
-=======
 import {showList, wrap, mainImg, info, singer, next, play, prov, message, audio, rotate} from "./var";
 import {lyrics} from "./lyrics";
 rotate.style.animationPlayState = 'paused';
 // import {show} from "./list";
->>>>>>> V2.00
 let consolePlay = (data) => {
     window.index = 0;
     let i = 0;
@@ -60,19 +54,13 @@ let consolePlay = (data) => {
         if(i % 2 === 1){
             play.innerHTML = '&#xe638;';
             audio.play();
-<<<<<<< HEAD
-=======
             rotate.style.animationPlayState = 'running';
->>>>>>> V2.00
             return;
         }
         if(i % 2 === 0){
             play.innerHTML = '&#xe6ce;';
             audio.pause();
-<<<<<<< HEAD
-=======
             rotate.style.animationPlayState = 'paused';
->>>>>>> V2.00
             return;
         }
     }

@@ -13,11 +13,6 @@ let playTimeN = allTime.children[0];
 let allTimeN = document.querySelector('.message~span');
 let list = document.querySelector('.list');
 let showList = document.querySelector('.showList');
-<<<<<<< HEAD
-window.i = 0
-export  {showList, list, wrap, mainImg, info, singer, next, play, prov, message, audio, playTime, allTime, playTimeN, allTimeN};
-=======
 let rotate = document.querySelector('.main').children[0];
 window.i = 0
 export  {showList, list, wrap, mainImg, info, singer, next, play, prov, message, audio, playTime, allTime, playTimeN, allTimeN, rotate};
->>>>>>> V2.00
